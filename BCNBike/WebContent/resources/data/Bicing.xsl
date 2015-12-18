@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Bicing.xsl version 1-0
-
-Transforma xml proporcionat per OPENDATA Barcelona sobre estacions de bicing i estat a
-http://wservice.viabicing.cat/v1/getstations.php?v=1 en format kml compatible Google Maps
-
-Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx.xsd
-
+*
+* Transformx XML provided by OPENDATA Barcelona about public bike stations and status
+* http://wservice.viabicing.cat/v1/getstations.php?v=1 into KML format compatible with Google Maps
+*
+* @author Jagova65
+* @version 1.0
+*
+*
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="xml" encoding="UTF-8"></xsl:output>
@@ -72,7 +74,7 @@ Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx
 				<IconStyle>
 					<color>0033ff</color>
 					<Icon>
-						<href>http://www.bcn2006.com/Bicing/resources/img/empty.png</href>
+						<href><xsl:value-of select="concat($Host,'/resources/img/empty.png')"/></href>
 					</Icon>
 					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'></hotSpot>
 				</IconStyle>
@@ -87,7 +89,7 @@ Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx
 				<IconStyle>
 					<color>0033ff</color>
 					<Icon>
-						<href>http://www.bcn2006.com/Bicing/resources/img/quart.png</href>
+						<href><xsl:value-of select="concat($Host,'/resources/img/quart.png')"/></href>
 					</Icon>
 					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'></hotSpot>
 				</IconStyle>
@@ -102,7 +104,7 @@ Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx
 				<IconStyle>
 					<color>0099ff</color>
 					<Icon>
-						<href>http://www.bcn2006.com/Bicing/resources/img/half.png</href>
+						<href><xsl:value-of select="concat($Host,'/resources/img/half.png')"/></href>
 					</Icon>
 					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'></hotSpot>
 				</IconStyle>
@@ -117,7 +119,7 @@ Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx
 				<IconStyle>
 					<color>0033ff</color>
 					<Icon>
-						<href>http://www.bcn2006.com/Bicing/resources/img/3quart.png</href>
+						<href><xsl:value-of select="concat($Host,'/resources/img/3quart.png')"/></href>
 					</Icon>
 					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'></hotSpot>
 				</IconStyle>
@@ -132,7 +134,7 @@ Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx
 				<IconStyle>
 					<color>33cc33</color>
 					<Icon>
-						<href>http://www.bcn2006.com/Bicing/resources/img/full.png</href>
+						<href><xsl:value-of select="concat($Host,'/resources/img/full.png')"/></href>
 					</Icon>
 					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
 					</hotSpot>
@@ -148,7 +150,7 @@ Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx
 				<IconStyle>
 					<color>33cc33</color>
 					<Icon>
-						<href>http://www.bcn2006.com/Bicing/resources/img/closed.png</href>
+						<href><xsl:value-of select="concat($Host,'/resources/img/closed.png')"/></href>
 					</Icon>
 					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
 					</hotSpot>

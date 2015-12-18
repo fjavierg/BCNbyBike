@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rexpfd>
+    <destination path="Main-Laptop.ftp.bcn2006.com:/public_html/Bicing"/>
+    <options createDirectoryStructure="false" createSelectedOnly="true" descriptionFilePath="/BCNBike/exportWebServer.rexpfd" overWriteExistingFiles="false" reviewSynchronize="false" saveSettings="true"/>
+    <selectedElements>
+        <file path="/BCNBike/WebContent/.htaccess"/>
+        <file path="/BCNBike/WebContent/BCNBikeIcon.png"/>
+        <file path="/BCNBike/WebContent/bicing.php"/>
+        <file path="/BCNBike/WebContent/index.html"/>
+        <file path="/BCNBike/WebContent/php.ini"/>
+        <folder path="/BCNBike/WebContent/resources"/>
+    </selectedElements>
+</rexpfd>
