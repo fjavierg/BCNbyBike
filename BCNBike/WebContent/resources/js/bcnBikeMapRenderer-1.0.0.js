@@ -40,12 +40,10 @@ function initMap() {
 		map : map
 	});
 
-	if (navigator.geolocation) navigator.geolocation.getCurrentPosition(function(pos) {
+	if (navigator.geolocation) navigator.geolocation.watchPosition(function(pos) {
 		var me = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
 		myloc.setPosition(me);
 		map.setCenter(me);
-	}, function(error) {
-		alert('error in geolocation');
 	});
   
   carrilLayer = new google.maps.KmlLayer({
