@@ -72,11 +72,10 @@
 			<!-- Estils emprats per estacións en funció del numero de bicis disponibles -->
 			<Style id='icon-503-empty-normal'>
 				<IconStyle>
-					<color>0033ff</color>
+					<scale>1.0</scale>
 					<Icon>
 						<href><xsl:value-of select="concat($Host,'/resources/img/empty.png')"/></href>
 					</Icon>
-					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'></hotSpot>
 				</IconStyle>
 			</Style>
 			<StyleMap id='icon-503-empty'>
@@ -87,11 +86,10 @@
 			</StyleMap>
 			<Style id='icon-503-quart-normal'>
 				<IconStyle>
-					<color>0033ff</color>
+					<scale>1.0</scale>
 					<Icon>
 						<href><xsl:value-of select="concat($Host,'/resources/img/quart.png')"/></href>
 					</Icon>
-					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'></hotSpot>
 				</IconStyle>
 			</Style>
 			<StyleMap id='icon-503-quart'>
@@ -102,11 +100,10 @@
 			</StyleMap>
 			<Style id='icon-503-half-normal'>
 				<IconStyle>
-					<color>0099ff</color>
+					<scale>1.0</scale>
 					<Icon>
 						<href><xsl:value-of select="concat($Host,'/resources/img/half.png')"/></href>
 					</Icon>
-					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'></hotSpot>
 				</IconStyle>
 			</Style>
 			<StyleMap id='icon-503-half'>
@@ -117,11 +114,10 @@
 			</StyleMap>
 			<Style id='icon-503-3quart-normal'>
 				<IconStyle>
-					<color>0033ff</color>
+					<scale>1.0</scale>
 					<Icon>
 						<href><xsl:value-of select="concat($Host,'/resources/img/3quart.png')"/></href>
 					</Icon>
-					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'></hotSpot>
 				</IconStyle>
 			</Style>
 			<StyleMap id='icon-503-3quart'>
@@ -132,12 +128,10 @@
 			</StyleMap>
 			<Style id='icon-503-full-normal'>
 				<IconStyle>
-					<color>33cc33</color>
+					<scale>1.0</scale>
 					<Icon>
 						<href><xsl:value-of select="concat($Host,'/resources/img/full.png')"/></href>
 					</Icon>
-					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
-					</hotSpot>
 				</IconStyle>
 			</Style>
 			<StyleMap id='icon-503-full'>
@@ -148,12 +142,10 @@
 			</StyleMap>
 			<Style id='icon-503-closed-normal'>
 				<IconStyle>
-					<color>33cc33</color>
+					<scale>1.0</scale>
 					<Icon>
 						<href><xsl:value-of select="concat($Host,'/resources/img/closed.png')"/></href>
 					</Icon>
-					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
-					</hotSpot>
 				</IconStyle>
 			</Style>
 			<StyleMap id='icon-503-closed'>

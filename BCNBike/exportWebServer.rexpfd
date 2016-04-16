@@ -8,6 +8,7 @@
         <file path="/BCNBike/WebContent/bicing.php"/>
         <file path="/BCNBike/WebContent/index.html"/>
         <file path="/BCNBike/WebContent/php.ini"/>
+        <file path="/BCNBike/WebContent/manifest.json"/>
         <folder path="/BCNBike/WebContent/resources"/>
     </selectedElements>
 </rexpfd>

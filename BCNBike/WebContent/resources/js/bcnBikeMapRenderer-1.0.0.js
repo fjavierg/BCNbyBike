@@ -18,6 +18,7 @@
 var HOME_URL = document.URL;
 var BICINGLAYER_URL = HOME_URL + '/resources/data/opendataBicing.out.kml';
 var CARRILLAYER_URL = HOME_URL + '/resources/data/Carrils%20Bici.kmz';
+var VIESLAYER_URL = HOME_URL + '/resources/data/Vies.kmz';
 var ZONA30LAYER_URL = HOME_URL + '/resources/data/Zones%2030.kmz';
 var ANCORLAYER_URL = HOME_URL + '/resources/data/Ancoratges.kmz';
 var RONDALAYER_URL = HOME_URL + '/resources/data/Ronda%20Verda.kmz';
@@ -52,6 +53,12 @@ function initMap() {
 	preserveViewport : true,
 	suppressInfoWindows : true
   });
+  viesLayer = new google.maps.KmlLayer({
+		url: VIESLAYER_URL,
+		map: map,
+		preserveViewport : true,
+		suppressInfoWindows : true
+	  });
   zona30Layer = new google.maps.KmlLayer({
 	url: ZONA30LAYER_URL,
 	map: map,

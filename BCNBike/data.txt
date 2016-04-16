@@ -1,0 +1,12 @@
+Get the data
+
+Visit http://com-shi-va.lameva.barcelona.cat/ca/bicicleta start network analyzer and get geojson data
+
+http://middleware.prod.mb.apsl.net/carrilbici/?access_token=SIsDbTUDe32tPO2TPNxTwIOm8Ud2f0&token_type=Bearer
+http://middleware.prod.mb.apsl.net/viesciclables/?access_token=SIsDbTUDe32tPO2TPNxTwIOm8Ud2f0&token_type=Bearer
+http://middleware.prod.mb.apsl.net/carrilbiciconstruccio/?access_token=sYvLxgErEjW1zHJPAFL5JxKk56lEn6&token_type=Bearer
+http://middleware.prod.mb.apsl.net/puntsancoratgebicicletes/?access_token=sYvLxgErEjW1zHJPAFL5JxKk56lEn6&token_type=Bearer
+
+Trnasform geojson to kml in http://converter.mygeodata.eu/
+
+Load kml files in Google My Maps, delete data table columns, select display options and save as kmz files
