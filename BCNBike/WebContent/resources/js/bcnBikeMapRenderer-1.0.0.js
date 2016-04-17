@@ -25,7 +25,7 @@ var RONDALAYER_URL = HOME_URL + '/resources/data/Ronda%20Verda.kmz';
 var OFF_COLOR = '#ccc';
 var ON_COLOR = '#fff';
 
-var map,bicingLayer,carrilLayer,zona30Layer,ancorLayer,rondaLayer;
+var map,bicingLayer,carrilLayer,viesLayer,zona30Layer,ancorLayer,rondaLayer,pan;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -44,8 +44,13 @@ function initMap() {
 	if (navigator.geolocation) navigator.geolocation.watchPosition(function(pos) {
 		var me = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
 		myloc.setPosition(me);
-		map.setCenter(me);
+		if (pan!=true) {map.setCenter(me);}
+		
 	});
+	
+  map.addListener('center_changed', function() {
+	    pan = true;
+	  });
   
   carrilLayer = new google.maps.KmlLayer({
 	url: CARRILLAYER_URL,
@@ -106,4 +111,5 @@ function refreshBicingLayer(btn,layer) {
     layer.setMap(null);
 	layer.setUrl(BICINGLAYER_URL);
     layer.setMap(map);
+    pan = false;
 }
